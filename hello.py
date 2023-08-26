@@ -7,7 +7,7 @@ height =  600
 win = pygame.display.set_mode( (width, height))
 pygame.display.set_caption("My game")
 
-BG = pygame.image.load("image.jpeg")
+BG = pygame.transform.scale(pygame.image.load("image.jpeg"), (width, height))
 
 def draw():
     win.blit(BG, (0, 0))
